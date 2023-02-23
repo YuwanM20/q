@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>button neon</title>
+	<style type="text/css">
+		 @import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+		*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Shantell Sans', cursive;
+
+}
+body{
+
+	min-height: 100vh;
+	background: rgb( 12, 9, 29);
+} 
+
+a{
+    position: absolute;
+    left: 50%;
+	bottom: 55%;
+    transform: translateX(-50%);
+	padding: 25px 10px;
+	margin: 10px 0;
+	color:#03e9f4;
+	font-size: 24px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.05s;
+	letter-spacing: 4px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+}
+a:nth-child(1)
+{
+     filter: hue-rotate(290deg);
+	 bottom: 25%;
+}
+a:nth-child(3)
+{
+     filter: hue-rotate(110deg);
+	 top: 50%;
+}
+a:hover {
+	background: #03e9f4;
+	color: #050801;
+	box-shadow: 0 0 5px#03e9f4,
+	            0 0 25px#03e9f4,
+	            0 0 50px#03e9f4,
+	            0 0 200px#03e9f4;
+}
+a span{
+	position: absolute;
+	display: block;
+}
+a span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#03e9f4);
+	animation: animate1 1s linear infinite;
+}
+@keyframes animate1
+{
+	0%
+	{
+		left: -100%;
+	}
+	50%,100%
+	{
+		left: 100%;
+	}
+
+}
+a span:nth-child(2){
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#03e9f4);
+	animation: animate2 1s linear infinite;
+	animation-delay: 0.25s;
+}
+@keyframes animate2
+{
+	0%
+	{
+		top: -100%;
+	}
+	50%,100%
+	{
+		top: 100%;
+	}
+
+}
+a span:nth-child(3){
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#03e9f4);
+	animation: animate3 1s linear infinite;
+	animation-delay: 0.5s;
+}
+@keyframes animate3
+{
+	0%
+	{
+		right: -100%;
+	}
+	50%,100%
+	{
+		right: 100%;
+	}
+
+}
+a span:nth-child(4){
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#03e9f4);
+	animation: animate4 1s linear infinite;
+	animation-delay: 0.75s
+}
+@keyframes animate4
+{
+	0%
+	{
+		bottom:  -100%;
+	}
+	50%,100%
+	{
+		bottom:  100%;
+	}
+
+}
+@media screen and (max-width: 600px) {
+  /* styles for screens smaller than 600px wide */
+  a{
+	padding: 15px 10px;
+	font-size: 25px;
+	bottom: 55%;
+	font-weight: 800;
+	letter-spacing: 1px;
+  }
+  a:nth-child(1)
+{
+	 bottom: 35%;
+}
+
+}
+@media screen and (max-width: 390px) {
+  /* styles for screens smaller than 600px wide */
+  a{
+	padding: 15px 10px;
+	font-size: 18px;
+	bottom: 55%;
+	font-weight: 800;
+	letter-spacing: 1px;
+  }
+  a:nth-child(1)
+{
+	 bottom: 35%;
+}
+
+}
+
+marquee{
+	font-size: 20px;
+	background-color: none;
+  color: #fff;
+
+}
+	</style>
+</head>
+<body>
+
+
+	<a href="bg.html">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Gabut bang!
+</a>
+
+<a href="particlev1.html">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		Gabut bang!
+</a>
+
+<marquee  direction="right" >KLIK YA BANG</marquee>
+</body>
+</html>

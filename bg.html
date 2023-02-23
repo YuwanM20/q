@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuwan</title>
+</head>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+		body {
+      font-family: 'Shantell Sans', cursive;
+			background-image: linear-gradient(to center, #F3007A,#F36E00,#E663EC,#EC639F, #6963EC,#DE3163, #FFFF00, #0f0, #0ff, #00f, #f0f, #f00 ,#40E0D0, #FF00FF, #000080, #0000FF, #008080, #00FFFF);
+			/* background-size: 1400% 100%; */
+			animation: gradient 1s ease infinite;
+		}
+		
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+
+
+		/* .text {
+  font-size: 36px;
+  text-shadow: 0 0 10px #DE3163, 0 0 20px #DE3163, 0 0 30px #DE3163, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  animation: glowing 2s ease-in-out infinite;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #DE3163, 0 0 20px #DE3163, 0 0 30px #DE3163, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #DE3163, 0 0 20px #DE3163, 0 0 30px #DE3163, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+  }
+} */
+
+/* .text {
+  animation: color-change 3s ease-in-out infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: red;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: orange;
+  }
+  100% {
+    color: purple;
+  }
+} */
+img{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  user-select: none;
+  transform: translate(-50%,-80%);
+  width: 300px;
+    height: 300px;
+}
+h1 {
+  display: inline-block;
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 40px;
+  user-select: none;
+  transform: translate(-50%, 65%);
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  /* styles for screens smaller than 600px wide */
+
+ img {
+  width: 280px;
+    height: 280px;
+
+  }
+
+
+  
+
+}
+@media screen and (max-width: 380px) {
+
+  img {
+  width: 200px;
+    height: 200px;
+
+  }
+  h1 {
+  
+  font-size: 30px;
+  transform: translate(-50%, 65%);
+}
+}
+
+@media screen and (max-width: 280px) {
+
+img {
+width: 150px;
+  height: 150px;
+
+}
+h1 {
+
+font-size: 23px;
+transform: translate(-50%, 65%);
+}
+}
+
+	</style>
+	<script>
+		setInterval(function(){
+			var colors = ['#E800F3, #ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+			var random_color = colors[Math.floor(Math.random() * colors.length)];
+			document.body.style.backgroundColor = random_color;
+		}, 150);
+	</script>
+
+<body>
+
+	
+<center id="lyrics">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<img src="https://i.giphy.com/media/QmH8OnsBQvC4yn8BnX/giphy.webp" >
+  <h1 class=" title">By Yuwan</h1>
+
+	<!-- <h1 class="text"></h1> -->
+<center>
+
+		
+		
+
+  <audio autoplay loop>
+    <source src="meneketehe.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
